@@ -1,15 +1,10 @@
 background-color{
 
-color: lightseagreen;
+color:lightseagreen ;
 
 }
-image{
-    
-    border-radius: 8px;
+
+image:hover{
+
     transform: scale(2, 3);
-}
-hover{
-
-image:  transform scale(2, 3);
-
 }
