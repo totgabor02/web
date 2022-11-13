@@ -5,6 +5,6 @@ color: lightseagreen;
 }
 image{
 
-
-
+    border-radius: 8px;
+    transform: scale(2, 3);
 }
