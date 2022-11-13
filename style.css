@@ -1,15 +1,5 @@
 background-color{
 
-    color:lightseagreen ;
-    
-    }
+color: #ececec;
 
-image:hover{
-
-    transform: scale(2, 3);
-    }
-    h3{
-
-        color: #ececec;
-
-    }
+}
