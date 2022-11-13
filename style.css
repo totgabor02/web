@@ -3,3 +3,8 @@ body{
     background-color: lightseagreen;
 
 }
+image:hover{
+
+    transform: scale(2);
+
+}
