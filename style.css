@@ -1,10 +1,10 @@
 background-color{
 
-color:lightseagreen ;
-
-}
+    color:lightseagreen ;
+    
+    }
 
 image:hover{
 
     transform: scale(2, 3);
-}
+    }
