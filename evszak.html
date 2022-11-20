@@ -34,12 +34,48 @@
             transform: scale(10%);
 
         }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(101, 21, 117);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:  rgb(112, 80, 105);
+}
+
+.active {
+  background-color: rgb(235, 44, 171);
+}
     </style>
 </head>
 <body>
+    <ul>
+        <li><a href="index.html">Föoldalam</a></li>
+         <li><a href="keplink.html">Képlinkes feladat</a></li>
+         <li><a href="lista.html">Listák</a></li>
+         <li><a href="tablazat.html">Órarendem</a></li>
+          <li><a  href="urlap.html">Rendeléses feladat</a></li>
+          <li><a class="active"  href="evszak.html">Évszakok</a></li>
+       </ul>
     <h1>Évszakok</h1>
 
-        <div class="1">
+      
+    <div class="1">
             <img src="img\tavasz.jpg" alt="tavasz" width="200px" height="150px">
         </div>
         <div class="2">
