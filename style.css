@@ -4,3 +4,13 @@ body{
     #20b2aa;
 
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+ }
+ 
