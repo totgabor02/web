@@ -61,6 +61,7 @@ p:first-letter{
 }
 
 li{
+  list-style-image: url("../homoktövis/HOMOKTÖVIS nyersanyag/img/bogyo.png");
   margin: 3px 0px;
   font-style: italic;
 }
