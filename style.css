@@ -18,5 +18,8 @@ body{
  }
  .menu{
    text-align: center;
-   
+
+ }
+ .kollasz:hover{
+   transform: scale(10,20);
  }
