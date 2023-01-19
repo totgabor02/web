@@ -5,8 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Számologép</title>
+    <style>
+        
+        h1,h2{
+            align-items: center;
+        }
+        .content{
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kepek{
+   float: left;
+}
+
+img{
+    border: 5px solid black;
+    border-radius: 5%;
+    width: 200px;
+    margin:20px;
+    transition: 1s;
+    height: 150px;
+}
+
+img:hover{
+    transform: scale(1.3);
+}
+
+        
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(101, 21, 117);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:  rgb(112, 80, 105);
+}
+
+.active {
+  background-color: rgb(235, 44, 171);
+}
+    </style>
 </head>
 <body>
+    <ul class="menu">
+        <li><a href="index.html">Föoldalam</a></li>
+         <li><a href="keplink.html">Képlinkes feladat</a></li>
+         <li><a href="lista.html">Listák</a></li>
+         <li><a href="tablazat.html">Órarendem</a></li>
+          <li><a  href="urlap.html">Rendeléses feladat</a></li>
+          <li><a class="active" href="evszak.html">Évszakok</a></li>
+          <li><a class="active" href="szamologep.html"></a></li>
+       </ul>
     
     <form action="javascript:oa()">
         <fieldset>
