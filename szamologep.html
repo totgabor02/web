@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számologép</title>
+</head>
+<body>
+    
+    <form action="javascript:oa()">
+        <fieldset>
+          <legend>Számologép</legend>
+          <input type="number" name="szam" id="szam1" placeholder="SZÁM 1">.
+          <input type="number" name="szam" id="szam2" placeholder="SZÁM 2">=
+            <input type="text" name="eredmeny" id="eredmeny" placeholder="eredmény"><br><br>
+            <input type="submit" value="SUMBIT">
+            <input type="reset" value="RESET">
+        </fieldset>
+</form>
+<script>
+      function oa() {
+          eredmeny.value = Number(szam1.value) + Number(szam2.value);
+      }
+</script>
+</body>
+</html>
