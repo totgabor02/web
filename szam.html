@@ -2,20 +2,37 @@
 <html lang="hu">
   <head>
     <meta charset="utf-8">
-    <title>szamolo</title>
+    <title>Számologep</title>
   </head>
   <body>
     <form action="javascript:void(0)">
           <fieldset>
-            <legend>Egyszerű számológép program</legend>
-            <input type="number" name="szam" id="szam1" placeholder="SZÁM 1">
-            <input type="number" name="szam" id="szam2" placeholder="SZÁM 2">
+            <legend>Számológép</legend>
+            <input type="number" name="a" id="a" placeholder="SZÁM 1">
+            <input type="number" name="b" id="b" placeholder="SZÁM 2">
+            <input type="text" name="c" id="c" placeholder="EREDMÉNY"><br><br>
+            <input type="button" value=" + " onClick="ad()">
+            <input type="button" value=" - " onClick="von()">
+            <input type="button" value=" x " onClick="szor()">
+            <input type="button" value=" : " onClick="oszt()">
+            <input type="reset" value="DELL">
           </fieldset>
   </form>
   <script>
-        function ad() {
-            eredmeny.value = Number(szam1.value) + Number(szam2.value);
+
+        function ad () {
+          c.value = Number(a.value) + Number(b.value);
         }
+        function von () {
+            c.value = Number(a.value) - Number(b.value)
+        }
+        function szor () {
+            c.value = Number(a.value) * Number(b.value)
+        }
+        function oszt () {
+            c.value = Number(a.value) / Number(b.value)
+        }
+
   </script>
 </body>
 </html>
