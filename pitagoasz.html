@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pitagorasz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(101, 21, 117);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color:  rgb(112, 80, 105);
+  }
+  
+  .active {
+    background-color: rgb(235, 44, 171);
+  }
+<style>
+    body{
+        font-family: 'Fredoka One', cursive;
+    }
+    #cim{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="index.html">Föoldalam</a></li>
+         <li><a href="keplink.html">Képlinkes feladat</a></li>
+         <li><a href="lista.html">Listák</a></li>
+         <li><a href="tablazat.html">Órarendem</a></li>
+          <li><a  href="urlap.html">Rendeléses feladat</a></li>
+          <li><a href="evszak.html">Évszakok</a></li>
+          <li><a href="szam.html">Számologép</a></li>
+          <li><a class="active" href="pitagorasz.html">Pitagorasz kalkulátor</a></li>
+       </ul>
+<div id="cim">
+    <h1>PTAGORASZ TÉTEL KALKULÁTOR</h1>
+</div>
+<img src="haromsz.png" alt="háromszög" title="háromszög">
+<form>
 
+    <fieldset>
+        <legend>Adj meg legalább 2 oldalt!</legend>
+        <label for="a">A oldal:</label>
+        <input type="number" id="a" name="a" min="0"><br><br>
+        <label for="b">B oldal:</label>
+        <input type="number" id="b" name="b" min="0"><br><br>
+        <label for="c">C oldal:</label>
+        <input type="number" id="c" name="c" min="0"><br><br>
+        <button type="button" onclick="calculate()">Megold</button>
+    </fieldset>
+
+</form>
+<p id="result"></p>
+
+<script>
+function calculate() {
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+var c = document.getElementById("c").value;
+
+if (a === "") {
+var result = Math.sqrt(Math.pow(c, 2) - Math.pow(b, 2));
+document.getElementById("result").innerHTML = "Az A oldal hossza: " + result;
+} else if (b === "") {
+var result = Math.sqrt(Math.pow(c, 2) - Math.pow(a, 2));
+document.getElementById("result").innerHTML = "A B oldal hossza: " + result;
+} else if (c === "") {
+var result = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+document.getElementById("result").innerHTML = "A C oldal hossza: " + result;
+}
+}
+</script>
+</body>
+</html>
